@@ -1,0 +1,11 @@
+version: "1"
+pods:
+  backend:
+    name: pod-i12427-test
+    dockerfile: Dockerfile
+    build_context: "."
+    port: 3000
+    type: web
+    env:
+      defaults:
+        STAGE: "i12427"
